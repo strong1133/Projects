@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!--    font-family: 'Noto Sans KR', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>정석진의 타임라인 서비스🤣</title>
+
+</head>
+
+<body>
+<div class="background-header">
+
+</div>
+<div class="background-body">
+
+</div>
+<div class="wrap">
+    <div class="header">
+        <h2>Timeline Service</h2>
+        <p>
+            공유하고 싶은 소식을 입력해주세요.</br>
+            24시간이 지난 뒤에는 사라집니다.
+        </p>
+    </div>
+    <div class="area-write">
+        <textarea class="field" placeholder="공유하고 싶은 소식을 입력해주세요" name="contents" id="contents" cols="30"
+                  rows="10"></textarea>
+        <img src="images/send.png" alt="" onclick="writePost()">
+    </div>
+
+    <div id="cards-box" class="area-read">
+        <div class="card">
+            <!-- date/username 영역 -->
+            <div class="metadata">
+                <div class="date">
+                    October 10, 2020
+                </div>
+                <div id="1-username" class="username">
+                    anonymous
+                </div>
+            </div>
+            <!-- contents 조회/수정 영역-->
+            <div class="contents">
+                <div id="1-contents" class="text">
+                    dsafnkalfklewakflekelafkleajfkleafkldsankflenwaklfnekwlafneklwanfkelawnfkelanfkleanfklew
+                </div>
+                <div id="1-editarea" class="edit">
+                    <textarea id="1-textarea" class="te-edit" name="" id="" cols="30" rows="5"></textarea>
+                </div>
+            </div>
+            <!-- 버튼 영역-->
+            <div class="footer">
+                <img id="1-edit" onclick="editPost('1')" class="icon-start-edit" src="images/edit.png" alt="">
+                <img id="1-delete" onclick="deleteOne('1')" class="icon-delete" src="images/delete.png" alt="">
+                <img id="1-submit" onclick="submitEdit('1')" class="icon-end-edit" src="images/done.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
