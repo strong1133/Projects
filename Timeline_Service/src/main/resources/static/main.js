@@ -61,7 +61,7 @@ function getMessages() {
 }
 
 function addHtml(id, username, contents, modifiedAt) {
-    let tempHtml=`<div class="card">
+    let tempHtml = `<div class="card">
                     <!-- date/username 영역 -->
                     <div class="metadata">
                         <div class="date">
@@ -92,15 +92,53 @@ function addHtml(id, username, contents, modifiedAt) {
 
 //메세지 작성
 function writePost() {
+    let contents = $('#contents').val();
+    if (isVaildContents(contents) == false) {
+        return;
+    }
+    let username = genRandomName(10);
+    let data = {'username': username, 'contents': contents}
 
+    $.ajax({
+        type:'POST',
+        url: '/api/memos',
+        contentType:'application/json',
+        data: JSON.stringify(data),
+        success: function (response){
+            alert('메모가 성공적으로 작성되었습니다.')
+            window.location.reload();
+        }
+    })
 }
 
 //메세지 수정
-function submitEdit() {
-
+function submitEdit(id) {
+    let username = $(`#${id}-username`).text().trim();
+    let contents = $(`#${id}-textarea`).val().trim();
+    if (isVaildContents(contents)==false){
+        return;
+    }
+    let data = {'username': username, 'contents': contents}
+    $.ajax({
+        type:'PUT',
+        url: `/api/memos/${id}`,
+        contentType:'application/json',
+        data: JSON.stringify(data),
+        success: function (response){
+            alert('메모가 성공적으로 수정 되었습니다.')
+            window.location.reload();
+        }
+    })
 }
 
 //메세서지 삭제
-function deleteOne() {
-
+function deleteOne(id) {
+    $.ajax({
+        type:'DELETE',
+        url: `/api/memos/${id}`,
+        success: function (response){
+            alert('메모가 성공적으로 삭제 되었습니다.')
+            window.location.reload();
+        }
+    })
 }

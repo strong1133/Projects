@@ -7,6 +7,7 @@ import com.spring.timeline_service.service.MemoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -17,7 +18,9 @@ public class MemoRestController {
 
     @GetMapping("/api/memos")
     public List<Memo> getMemo() {
-        return memoRepository.findAllByOrderByModifiedAtDesc();
+        LocalDateTime start = LocalDateTime.now().minusDays(1);
+        LocalDateTime end = LocalDateTime.now();
+        return memoRepository.findAllByModifiedAtBetweenOrderByModifiedAtDesc(start, end);
     }
 
     @PostMapping("/api/memos")
