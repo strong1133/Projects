@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>모두의 책 리뷰</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <img
+          src="https://image.freepik.com/free-vector/large-bookcase-with-books-library-book-shelf-interior_92863-357.jpg"
+          alt="">
+      <h1 id="title">읽은 책에 대해 말씀해주세요.</h1>
+      <p>다른 사람을 위해 리뷰를 남겨주세요! 다 같이 좋은 책을 읽는다면 다 함께 행복해질 수 있지 않을까요?</p>
+      <hr/>
+      <div class="input-title">
+        <span id="span-title">제목</span>
+        <input type="text" id="book-title">
+      </div>
+      <div class="input-author">
+        <span id="span-author" >저자</span>
+        <input type="text" id="book-author">
+      </div>
+      <div class="input-review">
+        <span id="span-review">리뷰</span>
+        <textarea name="review" id="book-review" cols="30" rows="10"></textarea>
+      </div>
+      <div class="review-btn">
+        <button onclick="postReviews()">리뷰 작성하기</button>
+      </div>
+    </div>
+    <div class="table">
+      <table>
+        <thead>
+        <tr>
+          <th>제목</th>
+          <th>저자</th>
+          <th>리뷰</th>
+        </tr>
+
+        </thead>
+        <tbody id="review-table">
+        <tr>
+          <td>정석진 연대기</td>
+          <td>홍슬기</td>
+          <td>대단한 남자</td>
+        </tr>
+        <tr>
+          <td>탈무드</td>
+          <td>앙</td>
+          <td>기모뤼</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

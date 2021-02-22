@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.wrap {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: skyblue;
+}
+
+.input-title > input {
+    width: 92%;
+    border: none;
+    padding-left: 10px;
+}
+
+#span-title {
+    width: 8%;
+    height: 40px;
+    line-height: 43px;
+    text-align: center;
+    border-right: 1px solid gray;
+}
+
+.input-author {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: skyblue;
+}
+
+.input-author > input {
+    width: 92%;
+    border: none;
+    padding-left: 10px;
+}
+
+#span-author {
+    width: 8%;
+    height: 40px;
+    line-height: 43px;
+    text-align: center;
+    border-right: 1px solid gray;
+}
+
+.input-review {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: skyblue;
+}
+
+.input-review > textarea {
+    width: 92%;
+    border: none;
+    padding: 10px;
+    resize: none;
+}
+
+#span-review {
+    width: 8%;
+    height: 170px;
+    line-height: 170px;
+    text-align: center;
+    border-right: 1px solid gray;
+}
+
+.review-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.review-btn > button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: slateblue;
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.review-btn > button:hover{
+    transform: scale(1.05);
+    transition: all 200ms ease;
+}
+
+.review-btn > button:active{
+    background-color: salmon;
+}
+
+.table {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border-top: 1px solid #ddd;
+    padding: .75em;
+}
+
+td {
+    display: table-cell;
+}
+
