@@ -34,11 +34,6 @@ GitHub: https://github.com/strong1133/Projects/tree/main/BookReview
 </br>
 </br>
 
-## :orange_book: Comming soon!
-
-</br>
-</br>
-
 ## :orange_book: 타임라인 서비스!!
 
 GitHub: https://github.com/strong1133/Projects/tree/main/Timeline_Service
@@ -53,3 +48,8 @@ GitHub: https://github.com/strong1133/Projects/tree/main/Timeline_Service
 
   </br>
   </br>
+
+## :orange_book: Comming soon!
+
+</br>
+</br>
