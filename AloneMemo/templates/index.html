@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>영화 링크 메모</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="{{url_for('static',filename='main.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <h1 class="header-title">나홀로 링크 메모장!</h1>
+        <p class="header-desc">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다.</p>
+        <hr/>
+        <button id="header-btn" onclick="showclose()">포스팅 박스 열기</button>
+      </div>
+      <div class="post-box">
+        <div class="post-box-url">
+          <label for="post-url">아티클 URL</label>
+          <input type="text" id="post-url">
+        </div>
+        <div class="post-box-comment">
+          <label for="post-comment">간단 코멘트</label>
+          <textarea rows="5" id="post-comment"></textarea>
+        </div>
+        <div class="post-btn">
+          <button id="post-btn">기사저장</button>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-header">
+            <img
+                src="https://movie-phinf.pstatic.net/20210209_88/16128390981333jKyg_JPEG/movie_image.jpg?type=m665_443_2"
+                alt="" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title">그린 북</div>
+            <div class="card-desc">1962년 미국, 입담과 주먹만 믿고 살아가던 토니 발레롱가(비고 모텐슨)는 교양과 우아함 그 자체인천재...</div>
+            <div class="card-comment">안녕하세요. 케이론입니다!오늘 리뷰할 영화는그린 북입니다.지극히 개인적인 몇 줄 평<그린 북>은 2018 토론토국제영화제 관객상 수상과다가오는 골든 글로브 시상식에서감독상, 남우주연상 등 5개 부문 노미네이트는 물론크리틱...</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+                src="https://movie-phinf.pstatic.net/20210209_88/16128390981333jKyg_JPEG/movie_image.jpg?type=m665_443_2"
+                alt="" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title">그린북</div>
+            <div class="card-desc">1962년 미국, 입담과 주먹만 믿고 살아가던 토니 발레롱가(비고 모텐슨)는 교양과 우아함 그 자체인천재...</div>
+            <div class="card-comment">안녕하세요. 케이론입니다!오늘 리뷰할 영화는그린 북입니다.지극히 개인적인 몇 줄 평<그린 북>은 2018 토론토국제영화제 관객상 수상과다가오는 골든 글로브 시상식에서감독상, 남우주연상 등 5개 부문 노미네이트는 물론크리틱...</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+                src="https://movie-phinf.pstatic.net/20210209_88/16128390981333jKyg_JPEG/movie_image.jpg?type=m665_443_2"
+                alt="" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title"></div>
+            <div class="card-desc"></div>
+            <div class="card-comment"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+                src="https://movie-phinf.pstatic.net/20210209_88/16128390981333jKyg_JPEG/movie_image.jpg?type=m665_443_2"
+                alt="" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title"></div>
+            <div class="card-desc"></div>
+            <div class="card-comment"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

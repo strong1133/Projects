@@ -1,0 +1,128 @@
+
+body {
+    margin: 0;
+}
+
+.wrap {
+    width: 750px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.header {
+    width: 690px;
+    height: 170px;
+    background-color: #ddd;
+    margin: 0;
+    padding: 30px;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 50px;
+    color: black;
+}
+
+.header-desc {
+    font-size: 20px;
+    color: black;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid skyblue;
+}
+
+#header-btn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.post-box {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 380px;
+    display: none;
+    padding: 20px;
+    margin: 20px auto;
+
+}
+
+.post-box-url {
+    margin: 10px;
+}
+
+#post-url {
+    width: 100%;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.post-box-comment {
+    margin: 10px;
+}
+
+#post-comment {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.post-btn {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#post-btn {
+    padding: 5px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    background-color: skyblue;
+}
+.card-container{
+    width: 100%;
+    column-count: 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.card{
+    border: 1px solid #ddd ;
+    border-radius: 5px;
+    width: 235px;
+    margin: 0px;
+    /*padding: 10px;*/
+    margin-bottom: 20px;
+}
+.card-header > img {
+    width: 100%;
+
+}
+.card-body{
+    padding: 8px;
+}
+
+.card-title{
+    color: dodgerblue;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 5px;
+}
+.card-desc{
+    font-size: 15px;
+    padding: 5px;
+}
+.card-comment{
+    font-size: 15px;
+    padding: 5px;
+    color: rebeccapurple;
+    font-weight: 500;
+}
