@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>마이 페이보릿 무비스타</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <script src="{{url_for('static',filename='main.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <h1>마이 페이보릿 무비스타😆</h1>
+        <p>좋아요를 눌러보세요!</p>
+      </div>
+      <div class="container">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-body">
+              <img
+                  src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201904%2F20190422105402908-1015928.jpg&type=u120_150&quality=95"
+                  alt="">
+              <div class="card-body-content">
+                <h2>전여빈 <span>(좋아요: 11)</span></h2>
+                <p>멜로가 체질</p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#" id="like"><i class="fas fa-thumbs-up"></i>  위로</a>
+              <a href="#" id="hate"> 싫어요<i class="fas fa-thumbs-down"> </i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
