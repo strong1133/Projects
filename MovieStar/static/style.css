@@ -29,10 +29,12 @@ body {
 }
 
 .card {
-    border: 1px solid lightgrey;
+    border: 1px solid darkgray;
+    border-radius: 5px;
     position: relative;
     box-shadow: 0 0.4em 0.8em -0.525em ;
     /*padding: 10px;*/
+    margin-bottom: 20px;
 }
 
 .card-body {
@@ -41,8 +43,8 @@ body {
 }
 
 .card-body > img {
-    width: 55px;
-    height: 67px;
+    width: 60px;
+    height: 72px;
     position: absolute;
     top: 17px;
     left: 20px;
@@ -53,6 +55,11 @@ body {
     /*top: -3px;*/
     left: 90px;
     margin: 0;
+}
+h2 > span {
+    color: darkblue;
+    font-weight: 800;
+    font-size: 20px;
 }
 
 .card-body-content > p {
@@ -71,7 +78,7 @@ body {
     flex-basis: 0;
     flex-grow: 1;
     flex-shrink: 0;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid darkgray;
     margin: 0;
     height: 50px;
 }
@@ -87,7 +94,7 @@ body {
 }
 #like{
     color: darkblue;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid darkgray;
 }
 #hate{
     color: darkred;

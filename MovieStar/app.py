@@ -18,9 +18,27 @@ def get_stars():
     return jsonify({'result': 'success', 'stars': stars})
 
 
-@app.route('/moviestar', methods=['POST'])
-def set_stars():
-    return jsonify({'result': 'success'})
+@app.route('/like', methods=['POST'])
+def set_like():
+    name_receive = request.form['name_give']
+    target_star = db.stars.find_one({'name': name_receive})
+    current_like = target_star['like']
+    new_like = current_like + 1
+    db.stars.update_one({'name': name_receive}, {'$set': {'like': new_like}})
 
-    if __name__ == '__main__':
-        app.run('0.0.0.0', port=5000, debug=True)
+    return jsonify({'result': 'success', 'msg': '좋아요!'})
+
+
+@app.route('/hate', methods=['POST'])
+def set_hate():
+    name_receive2 = request.form['hate_give']
+    target_star = db.stars.find_one({'name': name_receive2})
+    current_like = target_star['like']
+    new_like = current_like -1
+    db.stars.update_one({'name': name_receive2}, {'$set': {'like': new_like}})
+
+    return jsonify({'result': 'success', 'msg': '싫어요!'})
+
+
+if __name__ == '__main__':
+    app.run('0.0.0.0', port=5000, debug=True)

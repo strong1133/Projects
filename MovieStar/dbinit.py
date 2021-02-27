@@ -18,6 +18,7 @@ db.stars.drop()
 for tr in trs:
     if tr.select_one('td.title > a') is not None:
         name = tr.select_one('td.title > a').text
+        name = name.split('(')[0]
         a = tr.select_one('td.title > a')['href']
         a = base + a
         # print(name)
