@@ -52,22 +52,6 @@ GitHub: https://github.com/strong1133/hh99_zero-waste
 </br>
 </br>
 
-## :orange_book: Zero-waste !!
-
-GitHub: https://github.com/strong1133/hh99_spring
-
-<p align="center">
-<img src="https://github.com/strong1133/hh99_zero-waste/raw/main/sample_img/sample-01.png?raw=true" width="40%">
-</img><img src="https://github.com/strong1133/hh99_zero-waste/raw/main/sample_img/sample-03.png?raw=true" width="40%">
-</p>
-
-- 지구를 살리는 운동 #제로웨이스트 운동을 알리고 동참하기 위해 다른 챌린저 들이 해당 운동에 어떻게 참여하고 있는 지 등을 인스타그램을 통해 모아보고 마킹하고,
-- 마킹한 게시물에 간단 메모 할 수 있는 서비스!
-- 🖥 파이썬 - flask, pymongo
-
-</br>
-</br>
-
 ## :orange_book: Spring Boot Blog!!
 
 GitHub: https://github.com/strong1133/Projects/tree/main/Timeline_Service
@@ -81,6 +65,21 @@ GitHub: https://github.com/strong1133/Projects/tree/main/Timeline_Service
 - OAuth2를 통한 카카오로그인 구현
 - 게시글 별 조회 및 댓글 시스템 구현
 - 🖥 Spring, Spring Security
+
+</br>
+</br>
+
+## :orange_book: 타임라인 서비스!!
+
+GitHub: https://github.com/strong1133/Projects/tree/main/Timeline_Service
+
+<p align="center">
+<img src="https://github.com/strong1133/Projects/raw/main/Timeline_Service/sample.png?raw=true" width="60%"></img>
+</p>
+
+- 그때 그때 드는 다양한 생각을 바로 바로 메모하고 저장한 후 다양한 사람들의 메모를 보여주는 서비스
+- 24시간이 경과한 메모는 노출 되지 않음
+- 🖥 Spring
 
 </br>
 </br>
