@@ -54,7 +54,7 @@ GitHub: https://github.com/strong1133/hh99_zero-waste
 
 ## :orange_book: Spring Boot Blog!!
 
-GitHub: https://github.com/strong1133/Projects/tree/main/Timeline_Service
+GitHub: https://github.com/strong1133/hh99_spring
 
 <p align="center">
 <img src="https://github.com/strong1133/hh99_spring/raw/main/thumnail/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%99%94%EB%A9%B4.png?raw=true" width="45%"></img>
